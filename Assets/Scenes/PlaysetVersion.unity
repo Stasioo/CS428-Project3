@@ -9604,6 +9604,7 @@ GameObject:
   - component: {fileID: 538774748}
   - component: {fileID: 538774747}
   - component: {fileID: 538774746}
+  - component: {fileID: 538774749}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -9687,6 +9688,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538774744}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &538774749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538774744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 542c4cd0735fbfb449ebf6ee9b30e682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotLight: {fileID: 167442274}
+  lightObject: {fileID: 538774744}
 --- !u!1001 &539019898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19038,7 +19053,7 @@ PrefabInstance:
     - target: {fileID: 7736847107121358400, guid: 4b7e28f4d3868f8488c6a0258ff1180c,
         type: 3}
       propertyPath: FirstTouched.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7736847107121358400, guid: 4b7e28f4d3868f8488c6a0258ff1180c,
         type: 3}
@@ -19048,7 +19063,7 @@ PrefabInstance:
     - target: {fileID: 7736847107121358400, guid: 4b7e28f4d3868f8488c6a0258ff1180c,
         type: 3}
       propertyPath: FirstTouched.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7736847107121358400, guid: 4b7e28f4d3868f8488c6a0258ff1180c,
         type: 3}
@@ -19064,7 +19079,7 @@ PrefabInstance:
         type: 3}
       propertyPath: FirstTouched.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 538774744}
+      objectReference: {fileID: 538774749}
     - target: {fileID: 7736847107121358400, guid: 4b7e28f4d3868f8488c6a0258ff1180c,
         type: 3}
       propertyPath: FirstTouched.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -19093,12 +19108,22 @@ PrefabInstance:
     - target: {fileID: 7736847107121358400, guid: 4b7e28f4d3868f8488c6a0258ff1180c,
         type: 3}
       propertyPath: FirstTouched.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
+      value: turnLightOnOff
       objectReference: {fileID: 0}
     - target: {fileID: 7736847107121358400, guid: 4b7e28f4d3868f8488c6a0258ff1180c,
         type: 3}
       propertyPath: FirstTouched.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 7736847107121358400, guid: 4b7e28f4d3868f8488c6a0258ff1180c,
+        type: 3}
+      propertyPath: FirstTouched.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7736847107121358400, guid: 4b7e28f4d3868f8488c6a0258ff1180c,
+        type: 3}
+      propertyPath: FirstTouched.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7736847107121358400, guid: 4b7e28f4d3868f8488c6a0258ff1180c,
         type: 3}
