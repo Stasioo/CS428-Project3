@@ -13,6 +13,7 @@ public class waterGun : MonoBehaviour
     }
     public void playParticleSys(float value)
     {
+        Debug.Log("Watergun received: " + value);
         if(value > 0.1f)
         {
             ps.Play();

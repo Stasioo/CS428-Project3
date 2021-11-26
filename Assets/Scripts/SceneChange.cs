@@ -16,11 +16,11 @@ public class SceneChange : MonoBehaviour
     }
     public void loadGiantVersion()
     {
-        Debug.Log("Loaded giant version scene");
+        SceneManager.LoadScene("GiantVersion");
     }
 
     public void loadCeilingVersion()
     {
-        Debug.Log("Loaded ceiling version scene");
+        SceneManager.LoadScene("CeilingVersion");
     }
 }
